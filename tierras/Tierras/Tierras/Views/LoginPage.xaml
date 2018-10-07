@@ -1,0 +1,51 @@
+﻿<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Tierras.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="10,20,10,5">
+            <Label 
+                FontAttributes="Bold"
+                FontSize="Large"
+                Text="Tierras"
+                HorizontalOptions="Center">
+            </Label>
+            <Image
+                WidthRequest="200"
+                Source="tierra">
+            </Image>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <Label                 
+                Text="Email">
+            </Label>
+            <Entry
+                Keyboard="Email"
+                Placeholder="Escribe tu email..">
+            </Entry>
+                <Label                 
+                Text="Password">
+                </Label>
+            <Entry
+                IsPassword="True"
+                Placeholder="Escribe tu password..">
+            </Entry>
+                <ActivityIndicator>
+                                
+                </ActivityIndicator>
+
+            <Button
+               BackgroundColor="Navy"
+               BorderRadius="23"
+               Text="Login"
+               TextColor="White">
+            </Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

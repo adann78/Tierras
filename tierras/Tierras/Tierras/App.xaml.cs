@@ -1,6 +1,8 @@
 ﻿using System;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Tierras.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Tierras
@@ -11,7 +13,7 @@ namespace Tierras
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
